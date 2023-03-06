@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/hu2_nan2_chang2_sha1.js"></script>
+
+</head>
+<body>
+    <div id="bcdf3806e08140a1b18f7804ba3e7ee9" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_bcdf3806e08140a1b18f7804ba3e7ee9 = echarts.init(
+            document.getElementById('bcdf3806e08140a1b18f7804ba3e7ee9'), 'white', {renderer: 'canvas'});
+        var option_bcdf3806e08140a1b18f7804ba3e7ee9 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "effectScatter",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 5,
+            "data": [
+                {
+                    "name": "\u6e56\u5357\u7701\u957f\u6c99\u5e02\u96e8\u82b1\u533a\u8df3\u9a6c\u9547\u4ed9\u5cf0\u5cad",
+                    "value": [
+                        113.16921879037058,
+                        28.039877432448428,
+                        10
+                    ]
+                },
+                {
+                    "name": "\u6e56\u5357\u7701\u957f\u6c99\u5e02\u5b81\u4e61\u5e02\u6a2a\u5e02\u9547\u85d5\u5858",
+                    "value": [
+                        112.21369756169062,
+                        28.211359706637378,
+                        5
+                    ]
+                },
+                {
+                    "name": "\u6e56\u5357\u7701\u957f\u6c99\u5e02\u957f\u6c99\u53bf\u9ec4\u82b1\u9547\u65b0\u5858\u94fa\u957f\u6c99\u9ec4\u82b1\u56fd\u9645\u673a\u573a",
+                    "value": [
+                        113.23212337884058,
+                        28.19327497825815,
+                        20
+                    ]
+                }
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u957f\u6c99-\u5e97\u94fa\u5206\u5e03",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "max": 1,
+                "label": "0\u4ee5\u4e0b",
+                "color": "#50A3BA"
+            },
+            {
+                "min": 1,
+                "max": 10,
+                "label": "1-10",
+                "color": "#3700A4"
+            },
+            {
+                "min": 10,
+                "max": 20,
+                "label": "10-20",
+                "color": "#81AE9F"
+            },
+            {
+                "min": 20,
+                "max": 30,
+                "label": "20-30",
+                "color": "#E2C568"
+            },
+            {
+                "min": 30,
+                "max": 50,
+                "label": "30-50",
+                "color": "#FCF84D"
+            },
+            {
+                "min": 50,
+                "max": 100,
+                "label": "50-100",
+                "color": "#DD0200"
+            },
+            {
+                "min": 100,
+                "max": 200,
+                "label": "100-200",
+                "color": "#DD675E"
+            },
+            {
+                "min": 200,
+                "label": "200\u4ee5\u4e0a",
+                "color": "#D94E5D"
+            }
+        ]
+    },
+    "geo": {
+        "map": "\u957f\u6c99",
+        "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
+        "emphasis": {}
+    }
+};
+        chart_bcdf3806e08140a1b18f7804ba3e7ee9.setOption(option_bcdf3806e08140a1b18f7804ba3e7ee9);
+    </script>
+</body>
+</html>
